@@ -1,0 +1,3 @@
+i learnt how to use godot yesterday
+
+this my first test
