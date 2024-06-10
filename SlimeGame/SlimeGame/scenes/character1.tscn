@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bjraryk2t03tn"]
+
+[ext_resource type="Texture2D" uid="uid://cwmb7sah4lwmp" path="res://assets/perhenmo8b8.png" id="1_0hl51"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mtnrq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0hl51")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2m2vv"]
+size = Vector2(17.6436, 20.7905)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -2)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_mtnrq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+scale = Vector2(0.608451, 0.608451)
+shape = SubResource("RectangleShape2D_2m2vv")

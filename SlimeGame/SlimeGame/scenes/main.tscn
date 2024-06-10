@@ -1,0 +1,214 @@
+[gd_scene load_steps=6 format=3 uid="uid://pk1bx5yhpt66"]
+
+[ext_resource type="PackedScene" uid="uid://bjraryk2t03tn" path="res://scenes/character1.tscn" id="1_oayoe"]
+[ext_resource type="Script" path="res://scripts/playerController.gd" id="2_l2t48"]
+[ext_resource type="PackedScene" uid="uid://b0jbwc8wgys77" path="res://scenes/ground.tscn" id="4_c4il2"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_54mcp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ihjlf"]
+size = Vector2(153, 1543)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_oayoe")]
+z_index = 5
+position = Vector2(0, -114)
+script = ExtResource("2_l2t48")
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0, -21)
+rotation = -0.785398
+zoom = Vector2(3, 3)
+position_smoothing_enabled = true
+
+[node name="ground" type="Node" parent="."]
+
+[node name="Node2D" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-100, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D13" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(49, -102)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D16" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(20, -280)
+rotation = 1.58001
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D17" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-155, -465)
+rotation = 2.13832
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D18" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-95, -289)
+rotation = -1.8217
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D14" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(49, -157)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D15" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(47, -215)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D22" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-233, -599)
+rotation = -0.242387
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D23" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-63, -602)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D24" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(151, -470)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D25" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(75, -700)
+rotation = 0.628962
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D28" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(86, -794)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D32" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(124, -833)
+rotation = -1.83775
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D29" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(240, -902)
+scale = Vector2(5.74264, 0.409271)
+metadata/_edit_group_ = true
+
+[node name="Node2D26" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(201, -549)
+rotation = 0.6515
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D27" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(199, -634)
+rotation = 0.6515
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D19" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-275, -319)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D20" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-254, -400)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D21" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-278, -506)
+scale = Vector2(1.16682, 0.293531)
+metadata/_edit_group_ = true
+
+[node name="Node2D2" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-60, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D3" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-20, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D4" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(20, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D5" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(55, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D6" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(95, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D7" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-220, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D8" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-180, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D9" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(-140, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D10" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(135, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D11" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(175, -25)
+metadata/_edit_group_ = true
+
+[node name="Node2D12" parent="ground" instance=ExtResource("4_c4il2")]
+position = Vector2(215, -25)
+metadata/_edit_group_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(-2, 76)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2, -106)
+shape = SubResource("WorldBoundaryShape2D_54mcp")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 196.0
+offset_top = -975.0
+offset_right = 267.0
+offset_bottom = -925.0
+text = "👍you beat game
+yay"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = -65.0
+offset_top = -660.0
+offset_right = 72.0
+offset_bottom = -610.0
+rotation = 0.609966
+text = "go down here >>"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 105.0
+offset_top = -154.0
+offset_right = 366.0
+offset_bottom = -79.0
+rotation = -0.0597776
+text = "wasd
+
+s to crouch (very useful i promise)"
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(-447, -658)
+shape = SubResource("RectangleShape2D_ihjlf")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(462, -659)
+shape = SubResource("RectangleShape2D_ihjlf")
